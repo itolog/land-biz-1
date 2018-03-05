@@ -1,0 +1,44 @@
+//mixins
+@import "mixins/mixins.scss";
+//shared
+@import "shared/**/*";
+//blocks
+@import "blocks/**/*";
+// main style
+
+body{
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+// 
+.section{
+  text-align: center;
+}
+.page-1{
+	background: red;
+}
+.page-2{
+	background-color: black;
+}
+.page-3{
+	background: green;
+}
+.page-4{
+	background: yellow;
+}
+.page-5{
+	background: grey;
+}
