@@ -1,0 +1,112 @@
+@import './../mixins/mixins';
+.page-1{
+	background-image: url('./../../img/fon1.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #0f2c53;
+}
+.page-1-wrapp{
+	display: flex;
+	height: 100%;
+	@include phones() {
+		flex-flow: column-reverse;
+	}
+}
+// LOGO
+.page-1__logo{
+	align-self: flex-end;
+	width: 100px;
+	height: 100px;
+	padding-left: 30px;
+	@include phones() {
+		align-self: flex-start;
+		padding-left: 5px;
+	}
+}
+.page-1__logo__img{
+	width: 100%;
+	height: auto;
+}
+// content
+.page-1__content{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	flex-flow: column;
+	text-align: right;
+	width: 470px;
+	@include phones() {
+		width: 90%;
+		margin-bottom: 50px;
+		padding: 10px;
+	}
+}
+.page-1__content__title{
+	opacity: 0;
+	animation-delay: 1s;
+}
+.page-1__content__border{
+	border-bottom: 4px dashed #0f2c53;
+	animation-delay: 2s;
+}
+.page-1__content__text{
+	animation-delay:3s;
+	font-size: 20px;
+}
+// Actions btn
+.page-1__action__btn{
+	display: flex;
+}
+.page-1__action__li{
+	flex: 1;
+	padding: 10px 5px 10px 5px;
+	background: #fd9c2a;
+	text-align: center;
+	animation-delay: 4s;
+	a{
+		color: #0f2c53;
+	}
+	&:hover{
+		background: #ffc058;
+	}
+}
+.page-1__action__li_left{
+	border-right: 1px solid grey;
+}
+// Anim Cristals
+.cris1{
+	position: absolute;
+	width: 42px;
+	height: 3.375rem;
+	left: 16rem;
+	top: 9rem;
+	@include tablets() {
+		height: 3.375rem;
+		left: 10rem;
+		top: 5rem;
+	}
+	@include phones() {
+		height: 5.375rem;
+		left: 5.3rem;
+		top: 9rem;
+	}
+}
+.cris2{
+	position: absolute;
+	width: 3.625rem;
+	height: 5.375rem;
+	left: 17rem;
+	top: 30rem;
+	@include tablets() {
+		width: 3.625rem;
+		height: 5.375rem;
+		left: 10rem;
+		top: 17rem;
+	}
+	@include phones() {
+		height: 7.375rem;
+		left: 5.3rem;
+		top: 31rem;
+		width: 3rem;
+	}
+}

@@ -15,6 +15,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
   <body>
    <!-- Section Header -->
@@ -22,36 +25,70 @@
     <!-- MENU -->
     <nav class="navigation">
       <ul id="myMenu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Header</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">About us</a></li>
-        <li data-menuanchor="thirdPage"><a href="#thirdPage">Services</a></li>
-        <li data-menuanchor="fourthPage"><a href="#fourthPage">Contacts</a></li>
+        <li data-menuanchor="firstPage" class="active myMenu__li">
+          <a href="#firstPage" class="myMenu__href">Header</a>
+        </li>
+        <li data-menuanchor="secondPage" class="myMenu__li">
+          <a href="#secondPage" class="myMenu__href">About us</a>
+        </li>
+        <li data-menuanchor="thirdPage" class="myMenu__li">
+          <a href="#thirdPage" class="myMenu__href">Services</a>
+        </li>
+        <li data-menuanchor="fourthPage" class="myMenu__li">
+          <a href="#fourthPage" class="myMenu__href">Contacts</a>
+        </li>
       </ul>
     </nav>
   </header>
-  
-  <!-- Section content -->
+  <!-- Main Content -->
 <div id="fullpage">
-  <div class="section page-1" id="#firstPage">
-    <h2>Header</h2>
-  </div>
-  <div class="section page-2" id="#secondPage">
-    <h2>About us</h2>
-  </div>
-  <div class="section page-3" id="#thirdPage">
-    <div class="slide" data-anchor="slide1">
-      <header><h1>Google</h1></header>
-      <img src="img/mf.png" class="img">
-      <div class="root">
-        <a href="https://www.google.com/" target="_blank">go to site</a>
+  <div class="wrapper">
+    <!-- First section -->
+    <section class="section page-1" id="#firstPage">
+      <img class="cris1" src="./img/Осколок_1.png" alt="img1">
+      <img class="cris2" src="./img/Осколок_2.png" alt="img2">
+      <div class="page-1-wrapp">
+        <div class="page-1__logo">
+          <img class="page-1__logo__img" src="./img/jp.png" alt="logo">
+        </div>
+        <div class="page-1__content">
+          <h1 class="page-1__content__title">Графическая</br>упаковка инфопродуктов</h1>
+          <!-- Border div -->
+          <div class="page-1__content__border"></div>
+          <p class="page-1__content__text">От сайта до презинтации на вебинар</p>
+          <!-- BUTTONS -->
+          <div class="page-1__action">
+            <ul class="page-1__action__btn">
+              <li class="page-1__action__li page-1__action__li_left">
+                <a class="page-1__action__href" href="#">Узнать подробнее</a>
+              </li>
+              <li class="page-1__action__li">
+                <a class="page-1__action__href" href="#">Связатся с нами</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      
-    </div>
-    <div class="slide" data-anchor="slide2"><h3>service  2</h3> </div>
-    <div class="slide" data-anchor="slide3"> <h3>service  3</h3> </div>
-    <div class="slide" data-anchor="slide4"> <h3>service  4</h3> </div>
+    </section>
+    <!-- Section second -->
+    <section class="section page-2" id="#secondPage">
+      <h2>About us</h2>
+    </section>
+    <section class="section page-3" id="#thirdPage">
+      <div class="slide" data-anchor="slide1">
+        <header><h1>Google</h1></header>
+        <img data-src="img/mf.png" class="img">
+        <div class="root">
+          <a href="https://www.google.com/" target="_blank">go to site</a>
+        </div>
+        
+      </div>
+      <div class="slide" data-anchor="slide2"><h3>service  2</h3> </div>
+      <div class="slide" data-anchor="slide3"> <h3>service  3</h3> </div>
+      <div class="slide" data-anchor="slide4"> <h3>service  4</h3> </div>
+    </section>
+    <section class="section page-4" id="#fourthPage">Contacts</section>
   </div>
-  <div class="section page-4" id="#fourthPage">Contacts</div>
 </div>
 
 <!-- scripts  -->

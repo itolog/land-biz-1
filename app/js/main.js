@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//Navigation
-		menu: '#menu',
+		// menu: '#menu',
 		lockAnchors: false,
 		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 		menu: '#myMenu',
@@ -20,7 +20,7 @@ $(document).ready(function() {
 		fitToSectionDelay: 1000,
 		scrollBar: false,
 		easing: 'easeInOutCubic',
-		easingcss3: 'ease',
+		easingcss3: 'ease-in',
 		loopBottom: false,
 		loopTop: false,
 		loopHorizontal: true,
@@ -48,7 +48,7 @@ $(document).ready(function() {
 		//Design
 		controlArrows: true,
 		verticalCentered: true,
-		sectionsColor : ['#ccc', '#fff'],
+		sectionsColor : [],
 		paddingTop: '3em',
 		paddingBottom: '10px',
 		fixedElements: '#header, .footer',
@@ -66,7 +66,27 @@ $(document).ready(function() {
 
 		//events
 		onLeave: function(index, nextIndex, direction){},
-		afterLoad: function(anchorLink, index){},
+		afterLoad: function(anchorLink, index){
+			let that = $(this);
+			if(anchorLink == 'firstPage'){
+			console.log("Section 1 ended loading");
+			$('h1').addClass('fadeIn');
+			$('p').addClass('fadeIn');
+			$('.page-1__content__border').addClass('fadeIn');
+			$('.page-1__action__li').addClass('fadeIn');
+			$('.cris1').css({
+				'transform': 'translate3d(200px, 20px, 0)',
+				'transition': '4s'
+			});
+			$('.cris2').css({
+				'transform': 'translate3d(200px, -170px, 0)',
+				'transition': '4s'
+			});
+			}
+			if(anchorLink == 'secondPage'){
+			console.log("Section 2 ended loading");
+			}
+		},
 		afterRender: function(){},
 		afterResize: function(){},
 		afterResponsive: function(isResponsive){},

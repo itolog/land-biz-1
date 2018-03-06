@@ -11,6 +11,9 @@ body{
   min-height: 100vh;
   box-sizing: border-box;
 }
+.wrapper{
+  position: relative;
+}
 a{
   text-decoration: none;
   display: block;
@@ -27,18 +30,8 @@ li{
 .section{
   text-align: center;
 }
-.page-1{
-	background: red;
-}
-.page-2{
-	background-color: black;
-}
-.page-3{
-	background: green;
-}
-.page-4{
-	background: yellow;
-}
-.page-5{
-	background: grey;
+
+// Временно
+.slide{
+  background: aqua;
 }
