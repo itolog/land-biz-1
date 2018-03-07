@@ -90,7 +90,9 @@ $(document).ready(function() {
 			}
 			// Vslues
 			if(anchorLink == 'Our_values'){
-				$('.page-3__li').addClass('animated zoomInUp');
+				const p = $('.page-3__li');
+				p.css('opacity', 0);
+				p.addClass('zoomInUp').css('opacity', 1);
 				}
 		},
 		afterRender: function(){},

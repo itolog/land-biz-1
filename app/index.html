@@ -16,15 +16,15 @@
     <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans" rel="stylesheet">
    <!-- Main Style -->
    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
    <!-- Section Header -->
-  <header class="header">
+  <!-- <header class="header"> -->
     <!-- MENU -->
-    <nav class="navigation">
+   <!--  <nav class="navigation">
       <ul id="myMenu">
         <li data-menuanchor="firstPage" class="active myMenu__li">
           <a href="#firstPage" class="myMenu__href">Header</a>
@@ -40,7 +40,7 @@
         </li>
       </ul>
     </nav>
-  </header>
+  </header> -->
   <!-- Main Content -->
 <div id="fullpage">
   <div class="wrapper">
@@ -58,8 +58,8 @@
           <!-- BUTTONS -->
           <div class="page-1__action">
             <ul class="page-1__action__btn">
-              <li class="page-1__action__li page-1__action__li_left">
-                <a class="page-1__action__href" href="#">Узнать подробнее</a>
+			        <li data-menuanchor="about" class="page-1__action__li page-1__action__li_left">
+                <a class="page-1__action__href" href="#about">Узнать подробнее</a>
               </li>
               <li class="page-1__action__li">
                 <a class="page-1__action__href" href="#">Связатся с нами</a>
@@ -191,7 +191,7 @@
       <div class="slide" data-anchor="slide1">
         <header><h1>Google</h1></header>
         <img src="img/mf.jpg" class="mf">
-        <div class="root">
+        <div data-class="root">
           <a href="https://www.google.com/" target="_blank">go to site</a>
         </div>
       </div>

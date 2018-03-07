@@ -5,16 +5,22 @@
 //blocks
 @import "blocks/**/*";
 // main style
-
+@font-face { 
+  font-family: ' Century Gothic'; 
+  src: 
+       url('./../fonts/CenturyGothic.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('./../fonts/CenturyGothic.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
 body{
   position: relative;
   min-height: 100vh;
   box-sizing: border-box;
-  
+  font-family: ' Century Gothic', sans-serif;
 }
 .wrapper{
   position: relative;
-  font-family: 'Didact Gothic', sans-serif;
 }
 a{
   text-decoration: none;

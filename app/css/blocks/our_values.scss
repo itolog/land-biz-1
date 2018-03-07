@@ -29,12 +29,15 @@
   text-align: left;
   height: 90px;
   font-size: 18px;
-  animation-duration: 2s;
-  animation-delay: .1s;
+  animation-duration: 1s;
+  opacity: 0;
   @include tablets() {
     height: 100px;
     font-size: 14px;
-    text-align: justify;
+  }
+  @include phones() {
+    height: auto;
+    padding-bottom: 10px;
   }
 }
 .page-3__li_right{
@@ -42,7 +45,6 @@
   flex-flow: row-reverse;
   text-align: right;
   animation-duration: 2s;
-  animation-delay: .5s;
 }
 .page-3__li__text__title{
   margin: 0;
