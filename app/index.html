@@ -10,14 +10,15 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-
     <!-- Normalize -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <!-- Main Style -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Animate CSS -->
     <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans" rel="stylesheet">
+   <!-- Main Style -->
+   <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
    <!-- Section Header -->
@@ -28,11 +29,11 @@
         <li data-menuanchor="firstPage" class="active myMenu__li">
           <a href="#firstPage" class="myMenu__href">Header</a>
         </li>
-        <li data-menuanchor="secondPage" class="myMenu__li">
-          <a href="#secondPage" class="myMenu__href">About us</a>
+        <li data-menuanchor="about" class="myMenu__li">
+          <a href="#about" class="myMenu__href">О нас</a>
         </li>
-        <li data-menuanchor="thirdPage" class="myMenu__li">
-          <a href="#thirdPage" class="myMenu__href">Services</a>
+        <li data-menuanchor="Our_values" class="myMenu__li">
+          <a href="#Our_values" class="myMenu__href">Наши ценности</a>
         </li>
         <li data-menuanchor="fourthPage" class="myMenu__li">
           <a href="#fourthPage" class="myMenu__href">Contacts</a>
@@ -43,7 +44,7 @@
   <!-- Main Content -->
 <div id="fullpage">
   <div class="wrapper">
-    <!-- First section -->
+    <!-- First section ========================================================-->
     <section class="section page-1" id="#firstPage">
       <img class="cris1" src="./img/Осколок_1.png" alt="img1">
       <img class="cris2" src="./img/Осколок_2.png" alt="img2">
@@ -53,8 +54,6 @@
         </div>
         <div class="page-1__content">
           <h1 class="page-1__content__title">Графическая</br>упаковка инфопродуктов</h1>
-          <!-- Border div -->
-          <div class="page-1__content__border"></div>
           <p class="page-1__content__text">От сайта до презинтации на вебинар</p>
           <!-- BUTTONS -->
           <div class="page-1__action">
@@ -70,24 +69,136 @@
         </div>
       </div>
     </section>
-    <!-- Section second -->
-    <section class="section page-2" id="#secondPage">
-      <h2>About us</h2>
+    <!-- About US ================================================================-->
+    <section class="section page-2" id="#about">
+      <div class="page-2__wrapp">
+        <div class="page-2__content">
+          <h2 class="page-2__title">
+            О нас
+          </h2>
+          <p class="page-2__content__text">
+            Мы - команда специалистов в области дизайна и инфографики.
+            Наша специализация - упаковка информационных продуктов.
+          </p>
+          <p class="page-2__content__text">
+            Если Вы коуч, психолог, преподователь, инфобизнесмен или Вы
+            просто можете научить чему-то полезному других людей, хотите
+            сделать информацию красивой и удобной для восприятия - 
+            тогда вы попали по адресу!
+          </p>
+          <p class="page-2__content__text">
+            Сайт, презинтация, визитка, оформление ютуб-канала или соц.сетей,
+            шаблоны писем и т.д. - всё это в наших силах.
+          </p>
+          <p class="page-2__content__text">
+             <b>Наша миссия</b> - сделать информацию удобной для восприятия.
+          </p>
+        </div>
+      </div>
     </section>
-    <section class="section page-3" id="#thirdPage">
+    <!-- Our values -->
+    <section class="section page-3 fp-auto-height-responsive" id="#Our_values">
+      <div class="page-3__wrapp">
+        <div class="page-3__content">
+          <h2 class="page-2__title page-2__title__values">
+            Наши ценности
+          </h2>
+          <div class="page-3__items">
+            <ul class="page-3__ul">
+              <!-- li-left -->
+              <li class="page-3__li">
+                <div class="page-3__li__logo clock">
+                  <!-- <img class="page-3__li__pic" src="./img/Часы.png" alt="часы"> -->
+                </div>
+                <div class="page-3__li__text">
+                  <h3 class="page-3__li__text__title">
+                    Сроки
+                  </h3>
+                  <p class="page-3__li__paragraf">
+                    Мы понимаем важность вовремя сделанной презинтации,
+                    поэтому всегда строго соблюдаем дедлайны
+                  </p>
+                </div>
+              </li>
+              <!-- li-right -->
+              <li class="page-3__li page-3__li_right">
+                <div class="page-3__li__logo eye">
+                  <!-- <img class="page-3__li__pic" src="./img/глаз.png" alt="глаз"> -->
+                </div>
+                <div class="page-3__li__text">
+                  <h3 class="page-3__li__text__title">
+                    Восприятия vs Креатив
+                  </h3>
+                  <p class="page-3__li__paragraf">
+                    Если выбирать между удобством восприятия информации
+                    и сверх-креативом, мы выберем первое
+                  </p>
+                </div>
+              </li>
+              <!-- li-left -->
+              <li class="page-3__li">
+                <div class="page-3__li__logo brain">
+                  <!-- <img class="page-3__li__pic" src="./img/brain.svg" alt="мозг"> -->
+                </div>
+                <div class="page-3__li__text">
+                  <h3 class="page-3__li__text__title">
+                    Развитие
+                  </h3>
+                  <p class="page-3__li__paragraf">
+                   Мы всегда стремимся к развитию.И поэтому мы 
+                   иногда становимся клиентами наших клиентов :)
+                  </p>
+                </div>
+              </li>
+              <!-- li-right -->
+              <li class="page-3__li page-3__li_right">
+                <div class="page-3__li__logo check">
+                  <!-- <img class="page-3__li__pic" src="./img/галочка.png" alt="check"> -->
+                </div>
+                <div class="page-3__li__text">
+                  <h3 class="page-3__li__text__title">
+                    Простота
+                  </h3>
+                  <p class="page-3__li__paragraf">
+                    Мы не "грузим" клиентов сложными терминами и 
+                    не просим написать 3-томное ТЗ.Вместо этого
+                    наш мененджер расскажет всё на простом языке
+                  </p>
+                </div>
+              </li>
+              <!-- li-left -->
+              <li class="page-3__li">
+                <div class="page-3__li__logo copy">
+                  <!-- <img class="page-3__li__pic" src="./img/Копирайт.png" alt="Копирайт"> -->
+                </div>
+                <div class="page-3__li__text">
+                  <h3 class="page-3__li__text__title">
+                    Закон
+                  </h3>
+                  <p class="page-3__li__paragraf">
+                    Мы чтим авторское право и используем только те
+                    материалы, на которые у нас есть лицензия.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slide -->
+    <section class="section page-4" id="#fourthPage">
       <div class="slide" data-anchor="slide1">
         <header><h1>Google</h1></header>
-        <img data-src="img/mf.png" class="img">
+        <img src="img/mf.jpg" class="mf">
         <div class="root">
           <a href="https://www.google.com/" target="_blank">go to site</a>
         </div>
-        
       </div>
       <div class="slide" data-anchor="slide2"><h3>service  2</h3> </div>
       <div class="slide" data-anchor="slide3"> <h3>service  3</h3> </div>
       <div class="slide" data-anchor="slide4"> <h3>service  4</h3> </div>
     </section>
-    <section class="section page-4" id="#fourthPage">Contacts</section>
   </div>
 </div>
 

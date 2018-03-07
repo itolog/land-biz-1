@@ -19,3 +19,12 @@
     @content;
   }
 }
+// after
+@mixin afterLine($color, $width, $style, $pos) {
+	content: "";
+	display: block;
+	border: 2px $style $color;
+	width: $width;
+	align-self: $pos;
+	margin-top: 10px;
+}

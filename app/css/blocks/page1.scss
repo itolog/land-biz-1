@@ -7,6 +7,7 @@
 }
 .page-1-wrapp{
 	display: flex;
+	justify-content: flex-end;
 	height: 100%;
 	@include phones() {
 		flex-flow: column-reverse;
@@ -14,14 +15,11 @@
 }
 // LOGO
 .page-1__logo{
-	align-self: flex-end;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
 	width: 100px;
 	height: 100px;
-	padding-left: 30px;
-	@include phones() {
-		align-self: flex-start;
-		padding-left: 5px;
-	}
 }
 .page-1__logo__img{
 	width: 100%;
@@ -31,23 +29,36 @@
 .page-1__content{
 	display: flex;
 	justify-content: center;
-	margin: 0 auto;
 	flex-flow: column;
 	text-align: right;
 	width: 470px;
+	padding-right: 50px;
 	@include phones() {
 		width: 90%;
 		margin-bottom: 50px;
 		padding: 10px;
+		flex: 3;
 	}
 }
 .page-1__content__title{
+	display: flex;
+	flex-flow: column;
 	opacity: 0;
 	animation-delay: 1s;
-}
-.page-1__content__border{
-	border-bottom: 4px dashed #0f2c53;
-	animation-delay: 2s;
+	font-size: 2.6em;
+	text-align: right;
+	&:after{
+    @include afterLine(#0f2c53, 470px, dashed, flex-end);
+	}
+	@include tablets(){
+		font-size: 2em;
+		&:after{
+			@include afterLine(#0f2c53, 350px, dashed, flex-end);
+		}
+	}
+	@include phones() {
+		font-size:1.8em;
+	}
 }
 .page-1__content__text{
 	animation-delay:3s;
@@ -56,6 +67,9 @@
 // Actions btn
 .page-1__action__btn{
 	display: flex;
+	@include phones() {
+		padding: 0;
+	}
 }
 .page-1__action__li{
 	flex: 1;
@@ -65,6 +79,7 @@
 	animation-delay: 4s;
 	a{
 		color: #0f2c53;
+		font-family: 'Open Sans';
 	}
 	&:hover{
 		background: #ffc058;

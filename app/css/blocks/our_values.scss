@@ -1,0 +1,127 @@
+.page-3__wrapp{
+  height: 100%;
+  background-image: url('./../../img/fon3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  padding: 10px;
+}
+.page-2__title__values{
+  font-size: 40px;
+  margin-bottom: 10px;
+  &::after{
+    width: 260px;
+  }
+  @include phones() {
+    font-size: 30px;
+  }
+}
+.page-3__ul{
+  width: 80%;
+  margin: auto;
+  padding: 0;
+  @include tablets() {
+    width: 100%;
+  }
+}
+.page-3__li{
+  display: flex;
+  text-align: left;
+  height: 90px;
+  font-size: 18px;
+  animation-duration: 2s;
+  animation-delay: .1s;
+  @include tablets() {
+    height: 100px;
+    font-size: 14px;
+    text-align: justify;
+  }
+}
+.page-3__li_right{
+  display: flex;
+  flex-flow: row-reverse;
+  text-align: right;
+  animation-duration: 2s;
+  animation-delay: .5s;
+}
+.page-3__li__text__title{
+  margin: 0;
+}
+.page-3__li__text{
+  padding: 0px 10px 0px 20px;
+  width: 400px;
+}
+.page-3__li__paragraf{
+  margin: 5px 0px 0px 0px;
+}
+
+
+
+// IMaGe
+.page-3__li__logo{
+  position: relative;
+  width: 90px;
+  height: 80px;
+  // background: url('./../../img/css_sprites1.png');
+  // background-size: 16.375rem 9.375rem;
+  // background-repeat: no-repeat;
+  // @include phones() {
+  //   width: 7.575rem;
+  //   height: 5rem;
+  //   background-size: 14.375rem 8.375rem;
+  // }
+}
+.clock{
+  background: url('./../../img/svg/time-passing.svg') 100% 100% no-repeat;
+}
+.eye{
+   background: url('./../../img/svg/eye-open.svg') 100% 100% no-repeat;
+}
+.brain{
+  background: url('./../../img/svg/brain.svg') 100% 100% no-repeat;
+}
+.check{
+  background: url('./../../img/svg/checked.svg') 100% 100% no-repeat;
+}
+.copy{
+  background: url('./../../img/svg/copyright-symbol.svg') 100% 100% no-repeat;
+}
+//sprites
+// .clock{
+//   position: relative;
+//   background-position: 0.375rem -4.875rem;
+//   @include phones() {
+//     background-position: 0.375rem -3.975rem;
+//   }
+// }
+// .eye{
+//   position: relative;
+//   background-position: -10.6rem 1.125rem;
+//   @include phones() {
+//     background-position: -9.4rem 1.47rem;
+//   }
+// }
+// .brain{
+//   position: relative;
+//   background-position: -4.625rem .125rem;
+//   @include phones() {
+//     background-position: -4.4rem 1.47rem;
+//   }
+//   @include tablets() {
+//     background-position: -4.9rem 0.47rem;
+//   }
+// }
+// .check{
+//   position: relative;
+//   background-position: -9.625rem -3.875rem;
+//   @include phones() {
+//     background-position: -9.2rem -3.53rem;
+//   }
+// }
+// .copy{
+//   position: relative;
+//   background-position: .375rem 0.25rem;
+//    @include phones() {
+//     background-position: 0.6rem 1.1rem;
+//   }
+// }

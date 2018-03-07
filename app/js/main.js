@@ -3,11 +3,11 @@ $(document).ready(function() {
 		//Navigation
 		// menu: '#menu',
 		lockAnchors: false,
-		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+		anchors:['firstPage', 'about', 'Our_values', 'fourthPage'],
 		menu: '#myMenu',
 		navigation: false,
 		navigationPosition: 'right',
-		navigationTooltips: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+		navigationTooltips: ['firstPage', 'about', 'Our_values', 'fourthPage'],
 		showActiveTooltip: false,
 		slidesNavigation: false,
 		slidesNavPosition: 'bottom',
@@ -33,7 +33,7 @@ $(document).ready(function() {
 		resetSliders: false,
 		fadingEffect: false,
 		normalScrollElements: '#element1, .element2',
-		scrollOverflow: false,
+		scrollOverflow: true,
 		scrollOverflowReset: false,
 		scrollOverflowOptions: null,
 		touchSensitivity: 15,
@@ -49,8 +49,8 @@ $(document).ready(function() {
 		controlArrows: true,
 		verticalCentered: true,
 		sectionsColor : [],
-		paddingTop: '3em',
-		paddingBottom: '10px',
+		// paddingTop: '3em',
+		// paddingBottom: '10px',
 		fixedElements: '#header, .footer',
 		responsiveWidth: 0,
 		responsiveHeight: 0,
@@ -69,11 +69,11 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index){
 			let that = $(this);
 			if(anchorLink == 'firstPage'){
-			console.log("Section 1 ended loading");
-			$('h1').addClass('fadeIn');
-			$('p').addClass('fadeIn');
+			$('.page-1__content__title').addClass('fadeIn');
+			$('.page-1__content__text').addClass('fadeIn');
 			$('.page-1__content__border').addClass('fadeIn');
 			$('.page-1__action__li').addClass('fadeIn');
+			// anim cristals
 			$('.cris1').css({
 				'transform': 'translate3d(200px, 20px, 0)',
 				'transition': '4s'
@@ -82,10 +82,16 @@ $(document).ready(function() {
 				'transform': 'translate3d(200px, -170px, 0)',
 				'transition': '4s'
 			});
+			// 
 			}
-			if(anchorLink == 'secondPage'){
-			console.log("Section 2 ended loading");
+			// about
+			if(anchorLink == 'about'){
+			$('.page-2__content__text').addClass('animated tada');
 			}
+			// Vslues
+			if(anchorLink == 'Our_values'){
+				$('.page-3__li').addClass('animated zoomInUp');
+				}
 		},
 		afterRender: function(){},
 		afterResize: function(){},
