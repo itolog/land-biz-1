@@ -7,11 +7,7 @@
 .page-2__wrapp{
   display: flex;
   justify-content: center;
-  align-items: center;
   @include sizes();
-  @include phones() {
-    align-items: unset;
-  }
 }
 .page-2__content{
   display: flex;
@@ -21,9 +17,8 @@
   text-align: left;
   color: white;
   @include phones() {
-    justify-content: unset;
     width: 100%;
-    padding: 5% 5% 0px 5%;
+    padding: 0 2% 0px 2%;
   }
 }
 .page-2__title{

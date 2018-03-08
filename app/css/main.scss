@@ -18,7 +18,8 @@ html{
 		font-size: 14px;
   }
   @include phones() {
-		font-size: 10px;
+    font-size: 10px;
+    vertical-align: unset;
 	}
 }
 body{
@@ -35,6 +36,9 @@ h1,h2{
 }
 h3{
   font-size: 30px;
+}
+ul{
+  margin: 0;
 }
 a{
   text-decoration: none;

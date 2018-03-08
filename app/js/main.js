@@ -46,7 +46,7 @@ $(document).ready(function() {
 		recordHistory: true,
 
 		//Design
-		controlArrows: true,
+		controlArrows: false,
 		verticalCentered: true,
 		sectionsColor : [],
 		// paddingTop: '3em',

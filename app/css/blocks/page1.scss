@@ -9,10 +9,10 @@
 	display: flex;
 	justify-content: flex-end;
 	@include sizes();
-	@include phones() {
-		flex-flow: column-reverse;
-		justify-content: center;
-	}
+	// @include phones() {
+	// 	flex-flow: column-reverse;
+	// 	justify-content: center;
+	// }
 }
 // LOGO
 .page-1__logo{
@@ -29,7 +29,6 @@
 // content
 .page-1__content{
 	display: flex;
-	justify-content: center;
 	flex-flow: column;
 	text-align: right;
 	margin-right: 50px;
@@ -72,6 +71,8 @@
 	background: #fd9c2a;
 	text-align: center;
 	animation-delay: 4s;
+	margin-right: 5px;
+	border-radius: 10px;
 	a{
 		color: #0f2c53;
 		font-family: 'Open Sans', sans-serif;
