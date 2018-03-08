@@ -9,7 +9,7 @@ $(document).ready(function() {
 		navigationPosition: 'right',
 		navigationTooltips: ['firstPage', 'about', 'Our_values', 'fourthPage'],
 		showActiveTooltip: false,
-		slidesNavigation: false,
+		slidesNavigation: true,
 		slidesNavPosition: 'bottom',
 
 		//Scrolling
@@ -33,7 +33,7 @@ $(document).ready(function() {
 		resetSliders: false,
 		fadingEffect: false,
 		normalScrollElements: '#element1, .element2',
-		scrollOverflow: true,
+		scrollOverflow: false,
 		scrollOverflowReset: false,
 		scrollOverflowOptions: null,
 		touchSensitivity: 15,

@@ -13,6 +13,14 @@
   font-weight: normal; 
   font-style: normal; 
 }
+html{
+  @include tablets() {
+		font-size: 14px;
+  }
+  @include phones() {
+		font-size: 10px;
+	}
+}
 body{
   position: relative;
   min-height: 100vh;
@@ -21,6 +29,12 @@ body{
 }
 .wrapper{
   position: relative;
+}
+h1,h2{
+  font-size: 60px;
+}
+h3{
+  font-size: 30px;
 }
 a{
   text-decoration: none;

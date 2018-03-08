@@ -28,3 +28,9 @@
 	align-self: $pos;
 	margin-top: 10px;
 }
+
+@mixin sizes () {
+	min-height: 100vh;
+  max-width: 1600px;
+  margin: auto;
+}

@@ -1,48 +1,46 @@
 @import './../mixins/mixins';
-
+.page-2{
+  background-image: url('./../../img/fon2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 .page-2__wrapp{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  background-image: url('./../../img/fon2.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  @include sizes();
   @include phones() {
     align-items: unset;
-    // margin-top: 10px;
   }
 }
 .page-2__content{
   display: flex;
+  justify-content: center;
   flex-flow: column;
   width: 80%;
   text-align: left;
   color: white;
   @include phones() {
+    justify-content: unset;
     width: 100%;
-    padding: 0px 10px 0px 10px;
-    margin-top: 20px;
+    padding: 5% 5% 0px 5%;
   }
 }
 .page-2__title{
   display: flex;
   flex-flow: column;
   text-align: center;
-  font-size: 40px;
   margin: 0;
   &:after{
-    @include afterLine(white, 70px, dashed, center);
+    @include afterLine(white, 160px, dashed, center);
   }
   @include phones() {
-    font-size: 30px;
+    &:after{
+      width: 100px;
+    }
   }
 }
 .page-2__content__text{
   margin-bottom: 0;
-  font-size: 1.45rem;
-  // animation-delay: 1s;
-  @include phones() {
-    font-size: 18px;
-  }
+  font-size: 30px;
 }

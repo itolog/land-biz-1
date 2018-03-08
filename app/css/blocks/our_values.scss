@@ -1,44 +1,35 @@
-.page-3__wrapp{
-  height: 100%;
+.page-3{
   background-image: url('./../../img/fon3.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.page-3__wrapp{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   color: white;
-  padding: 10px;
+  @include sizes();
+
 }
 .page-2__title__values{
-  font-size: 40px;
-  margin-bottom: 10px;
   &::after{
-    width: 260px;
+    width: 28.25rem;
   }
   @include phones() {
-    font-size: 30px;
+     &::after{
+      width: 14.25rem;
+    }
   }
 }
 .page-3__ul{
-  width: 80%;
-  margin: auto;
   padding: 0;
-  @include tablets() {
-    width: 100%;
-  }
 }
 .page-3__li{
   display: flex;
   text-align: left;
-  height: 90px;
-  font-size: 18px;
   animation-duration: 1s;
   opacity: 0;
-  @include tablets() {
-    height: 100px;
-    font-size: 14px;
-  }
-  @include phones() {
-    height: auto;
-    padding-bottom: 10px;
-  }
+  padding: 1%;
 }
 .page-3__li_right{
   display: flex;
@@ -46,15 +37,19 @@
   text-align: right;
   animation-duration: 2s;
 }
+.page-3__li__text{
+  padding: 0px 10px 0px 20px;
+  width: 60%;
+  @include phones() {
+     width: 100%;
+  }
+}
 .page-3__li__text__title{
   margin: 0;
 }
-.page-3__li__text{
-  padding: 0px 10px 0px 20px;
-  width: 400px;
-}
 .page-3__li__paragraf{
   margin: 5px 0px 0px 0px;
+  font-size: 24px;
 }
 
 

@@ -8,9 +8,10 @@
 .page-1-wrapp{
 	display: flex;
 	justify-content: flex-end;
-	height: 100%;
+	@include sizes();
 	@include phones() {
 		flex-flow: column-reverse;
+		justify-content: center;
 	}
 }
 // LOGO
@@ -31,40 +32,35 @@
 	justify-content: center;
 	flex-flow: column;
 	text-align: right;
-	width: 470px;
-	padding-right: 50px;
+	margin-right: 50px;
 	@include phones() {
-		width: 90%;
-		margin-bottom: 50px;
-		padding: 10px;
-		flex: 3;
+		margin-right: 0px;
+		padding: 0 10px 0 10px;
 	}
 }
 .page-1__content__title{
 	display: flex;
 	flex-flow: column;
 	animation-delay: 1s;
-	font-size: 2.26em;
 	text-align: right;
 	&:after{
-    @include afterLine(#0f2c53, 460px, dashed, flex-end);
+    @include afterLine(#0f2c53, 99%, dashed, flex-end);
 	}
-	@include tablets(){
-		font-size: 1.73em;
+	@include tablets() {
 		&:after{
-			@include afterLine(#0f2c53, 350px, dashed, flex-end);
+    @include afterLine(#0f2c53, 90%, dashed, flex-end);
 		}
-	}
-	@include phones() {
-		font-size:1.71em;
 	}
 }
 .page-1__content__text{
 	animation-delay:3s;
-	font-size: 20px;
+	font-size: 36px;
+	@include phones() {
+	}
 }
 // Actions btn
 .page-1__action__btn{
+	font-size: 30px;
 	display: flex;
 	@include phones() {
 		padding: 0;
@@ -72,7 +68,7 @@
 }
 .page-1__action__li{
 	flex: 1;
-	padding: 10px 5px 10px 5px;
+	padding: 2%;
 	background: #fd9c2a;
 	text-align: center;
 	animation-delay: 4s;
