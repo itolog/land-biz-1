@@ -20,15 +20,24 @@
   }
 }
 // after
-@mixin afterLine($color, $width, $style, $pos) {
+@mixin afterLine($width, $pos) {
 	content: "";
+	background: url('./../../img/svg/line.svg');
 	display: block;
-	border: 2px $style $color;
 	width: $width;
 	align-self: $pos;
 	margin-top: 10px;
+	height: 20px;
 }
-
+@mixin afterLineWhite($width, $pos) {
+	content: "";
+	background: url('./../../img/svg/lineWhite.svg');
+	display: block;
+	width: $width;
+	align-self: $pos;
+	margin-top: 10px;
+	height: 20px;
+}
 @mixin sizes () {
 	// height: 100vh;
   max-width: 1600px;

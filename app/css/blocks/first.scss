@@ -1,0 +1,26 @@
+.first{
+	display: flex;
+	flex-flow: column;
+	max-width: 100%;
+	min-height: 700px;
+	background: url('../img/fon1.png') no-repeat 100% 100%;
+	color: #ffffff;
+	padding: 50px 0px 50px 50px;
+}
+.navigation__li{
+	list-style: none;
+}
+.subtitle{
+	display: flex;
+	flex-flow: column;
+}
+.to-do{
+	width: 350px;
+	text-align: center;
+}
+.to-do__link{
+	font-size: 18px;
+	padding: 10px;
+	background: #8a0e0c;
+	color: white;
+}

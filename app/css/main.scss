@@ -14,8 +14,9 @@
   font-style: normal; 
 }
 html{
+  font-size: 20px;
   @include tablets() {
-		font-size: 14px;
+		font-size: 13px;
   }
   @include phones() {
     font-size: 10px;
@@ -24,18 +25,27 @@ html{
 }
 body{
   position: relative;
-  min-height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   font-family: ' Century Gothic', sans-serif;
+  color: white;
 }
 .wrapper{
   position: relative;
 }
-h1,h2{
-  font-size: 60px;
+.centered{
+  margin: 0 auto;
+  width: 90%;
 }
-h3{
-  font-size: 30px;
+p{
+  font-size: 18px;
+}
+mark{
+  background: #f8c64d;
+}
+h1{
+  font-size: 38px;
+  margin: 0;
 }
 ul{
   margin: 0;
@@ -45,19 +55,7 @@ a{
   display: block;
   cursor: pointer;
 }
-li{
-  list-style: none;
-}
 .img{
   width: 100%;
   height: auto;
-}
-// 
-.section{
-  text-align: center;
-}
-
-// Временно
-.slide{
-  background: aqua;
 }

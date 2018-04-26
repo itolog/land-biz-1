@@ -3,6 +3,7 @@ module.exports = function(){
 const gulp = require('gulp');
 const gp = require('gulp-load-plugins')();
 const cssunit = require("gulp-css-unit");
+const gcmq = require('gulp-group-css-media-queries');
 
 gulp.task('sass', function () {
   return gulp.src('./app/css/main.scss')
@@ -13,6 +14,7 @@ gulp.task('sass', function () {
         message: "Error: <%= error.message %>",
         title: "Error in style"
       }))
+    .pipe(gcmq())
     .pipe(gp.autoprefixer({
             browsers: [
             'last 3 versions',

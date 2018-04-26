@@ -1,0 +1,17 @@
+.header{
+	background: #16151a;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap; 
+	padding: 20px 20px;
+}
+.navigation{
+	display: flex;
+	// color: white;
+}
+.navigation__li{
+	padding-right: 10px;
+	a{
+		color: white;
+	}
+}

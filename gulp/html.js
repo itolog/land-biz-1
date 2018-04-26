@@ -5,7 +5,7 @@ const gp = require('gulp-load-plugins')();
 
 gulp.task('html', function() {
   return gulp.src('app/*.html')
-    .pipe(gp.htmlmin({collapseWhitespace: true}))
+    .pipe(gp.htmlmin({collapseWhitespace: true,removeComments: true}))
     .pipe(gulp.dest('app/build'));
 });
 
