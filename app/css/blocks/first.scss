@@ -8,11 +8,16 @@
 	background: url('../img/fon1.png') no-repeat 100% 100%;
 	color: #ffffff;
 	background-size: cover;
-    background-position: 100% 100%;
-	padding: 120px 0px 50px 50px;
+  background-position: 100% 100%;
+	padding: 70px 0px 50px 50px;
 	font-size: 18px;
+	@include desktop() {
+		background-position: 40% 100%;
+	}
 	@include phones() {
 		padding: 50px 5px 20px 5px;
+		height: auto;
+		background-position: 50% 50%;
 	}
 }
 .navigation__li{

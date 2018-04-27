@@ -4,17 +4,19 @@
 @import "shared/**/*";
 //blocks
 @import "blocks/**/*";
+@import './mixins/mixins';
 // main style
-@font-face { 
-  // font-family: ' Century Gothic'; 
+// @font-face { 
+  // font-family: 'Exo 2', sans-serif;
   // src: 
   //      url('./../fonts/CenturyGothic.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
   //      url('./../fonts/CenturyGothic.woff') format('woff'); 
   // font-weight: normal; 
   // font-style: normal; 
-}
+// }
 html{
   font-size: 20px;
+  scroll-behavior: smooth;
   // @include tablets() {
 	// 	font-size: 13px;
   // }
@@ -24,11 +26,11 @@ html{
 	// }
 }
 body{
+  font-family: 'Exo 2', sans-serif;
   position: relative;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  font-family: ' Century Gothic', sans-serif;
   color: white;
 }
 .wrapper{
@@ -62,3 +64,9 @@ a{
   width: 100%;
   height: auto;
 }
+// section{
+//   height: 100vh;
+//   @include phones() {
+// 		height: auto;
+// 	}
+// }

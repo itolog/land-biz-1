@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
    <!-- Main Style -->
    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
    <!-- form style -->
    <style type="text/css">@media only screen and (max-width: 480px) {
       .form_newsletter {
@@ -25,19 +27,20 @@
       <header class="header">
         <div class="logo">
         </div>
+        <div class="burger">menu</div>
         <nav class="menu">
           <ul class="navigation">
             <li class="navigation__li">
-              <a href="#">Для кого</a>
+              <a href="#devel">Для кого</a>
             </li>
             <li class="navigation__li">
-              <a href="#">Программа</a>
+              <a href="#prog">Программа</a>
             </li>
             <li class="navigation__li">
-              <a href="#">Стоимость</a>
+              <a href="#price">Стоимость</a>
             </li>
             <li class="navigation__li">
-              <a href="#">Контакты</a>
+              <a href="#contact">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -60,7 +63,7 @@
             </h2>
             <div class="to-do">
               <p>всего доступно 60 мест</p>
-              <a href="#" class="to-do__link">забронировать место в зале</a>
+              <a href="#price-2" class="to-do__link">забронировать место в зале</a>
             </div>
              <p>3-дневный интенсив 10, 17, 24 июня г.Санкт-Петербург</p>
           </section>
@@ -147,7 +150,7 @@
         </section>
          <!-- TRHEE Section End-->
          <!-- Programm section -->
-          <section class="pragram">
+          <section class="pragram" id="prog">
             <ul class="pragram-ul centered">
               <!-- 10 июнь ============== -->
               <li class="pragram-li">
@@ -240,7 +243,7 @@
           </section>
          <!-- Programm section End-->
          <!-- Developer Section -->
-         <section class="develop">
+         <section class="develop" id="devel">
            <h3 class="develop__title">ЭТА ПРОГРАММА РАЗРАБОТАНА ДЛЯ:</h3>
            <ul class="develop-ul  centered">
              <li class="develop-ul__li">
@@ -341,7 +344,7 @@
           </section>
           <!-- Spikers END =======================================-->
           <!-- Contact form -->
-          <section class="join">
+          <section class="join" id="price">
               <h2 class="join__title">СТОИМОСТЬ ОБУЧЕНИЯ</h2>
               <div class="join-content centered">
                 <div class="join-content__timer">
@@ -350,14 +353,13 @@
                     </div>
                     <div class="join-content__time">
                       	<div class="clock"></div>
-	                      <div class="message"></div>
                     </div>
                     <div class="join-content__timer-bottom">
                         Стоимость в мае - 29900 рублей
                     </div>
                     <p class="join-content__timer-text">Возможна рассрочка на два месяца.</p>
                 </div>
-                <div class="join-content__form">
+                <div class="join-content__form" id="price-2">
                     <form action="https://ezueva.autoweboffice.ru/?r=personal/newsletter/sub/add&id=4580&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" class="form_newsletter" style="line-height: 20px; width: 400px; margin: 0px auto; background-color: rgb(255, 255, 255); border-radius: 3px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; border: 1px solid rgb(242, 247, 250);" target=""> <div class="form_newsletter_header" style="background-image: linear-gradient(rgb(29, 46, 123), rgb(58, 74, 140)); padding: 8px 0px; text-align: center; font-size: 16px; vertical-align: middle; color: rgb(255, 255, 255); border-top-left-radius: 1px; border-top-right-radius: 1px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; display: none;">Подписка на рассылку</div> <div class="form_newsletter_field ui-sortable" style="margin-bottom: 0px !important; margin-right: 0px !important; color: rgb(0, 0, 0);"><div id="html_field_name" class="form_newsletter_input name-block" style="padding: 6px 12px;"><div class="moving"></div><label style="text-align: left; display: block; margin-bottom: 5px; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal; text-decoration: none;">Имя<span class="required">*</span></label><input type="hidden" value="1" id="required_fields_name" name="required_fields[name]" placeholder=""><input class="field_value" maxlength="255" name="Contact[name]" type="text" style="padding: 4px 9px!important;box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);border-radius: 3px;background-color: #fff;border: 1px solid #ccc; width: 100%;height: 32px !important;-webkit-box-sizing : border-box;‌-moz-box-sizing : border-box;box-sizing : border-box;" placeholder=""></div><div id="html_field_email" class="form_newsletter_input email-block" style="padding: 6px 12px;"><div class="moving"></div><label style="text-align: left; display: block; margin-bottom: 5px; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal; text-decoration: none;">E-mail<span class="required">*</span></label><input type="hidden" value="1" id="required_fields_email" name="required_fields[email]" placeholder=""><input maxlength="255" name="Contact[email]" class="field_value" type="text" style="padding: 4px 9px!important;box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);border-radius: 3px;background-color: #fff;border: 1px solid #ccc; width: 100%;height: 32px !important;-webkit-box-sizing : border-box;‌-moz-box-sizing : border-box;box-sizing : border-box;" placeholder=""></div><div id="html_field_phone" class="form_newsletter_input phone-block" style="padding: 6px 12px;"><div class="moving"></div><label style="text-align: left; display: block; margin-bottom: 5px; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal; text-decoration: none;">Телефон<span class="required">*</span></label><span style="font-size: 80%;"><i></i></span><input type="hidden" value="1" id="required_fields_phone_number" name="required_fields[phone_number]" placeholder=""><input maxlength="255" name="Contact[phone_number]" type="text" class="field_value" style="padding: 4px 9px!important;box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);border-radius: 3px;background-color: #fff;border: 1px solid #ccc; width: 100%;height: 32px !important;-webkit-box-sizing : border-box;‌-moz-box-sizing : border-box;box-sizing : border-box;" placeholder=""></div></div> <div class="form_newsletter_submit" style="padding: 12px; text-align: center;"> <div class="form_newsletter_pp"><label for="p_p_acc" style="color: #555;font-size: 11px;margin-bottom: 8px; display: inline-block;"><input name="Contact[show_personal_data]" class="personal_policy_acc" id="p_p_acc" type="checkbox" style="margin:0;">&nbsp;
                       Нажимая на кнопку,
                       я даю <a href="//ezueva.autoweboffice.ru/document/view/personaldata" target="_blank">согласие на обработку персональных данных</a></label></div>
@@ -385,12 +387,12 @@
               </ul>
             </section>
              <!-- Отзыва END===============-->
-          <section class="contact">
+          <section class="contact" id="contact">
             <div class="contact__content">
               <h2>Остались вопросы? Пишите или звоните:</h2>
-              <p>NFO@EZUEVA.RU <br> +7 (981) 747 43 00</p>
+              <p>info@ezueva.ru <br> +7 (981) 747 43 00</p>
               <h3>Адрес:</h3>
-              <p>Г. Санкт-Петербург (Местро проведения уточняется)</p>
+              <p>Г. Санкт-Петербург (Место проведения уточняется)</p>
             </div>
             <div class="contact__map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186711.9202866115!2d30.120193429089955!3d59.921896463214814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1523182606313" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>

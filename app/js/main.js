@@ -14,14 +14,25 @@ $(function() {
             }
           }
       });
-      // clock = new FlipClock($('.clock'), {
-      //   clockFace: 'Counter',
-      //   autoStart: true,
-      //   minimumDigits: 6
-      // });
       clock.setTime(220880);
       clock.setCountdown(true);
       clock.start();
+
+
+      function menuToggle(){
+        var menu = $(".burger");
+        var txtMenu = $(".navigation__li a");
+        var closeMenu = $(".navigation");
+    
+        menu.on('click',function(){
+                if(closeMenu.is(':visible')){
+                    closeMenu.hide('slow');
+                } else {
+                    closeMenu.show('slow');  
+                }   
+        })
+    }
+    menuToggle();	
 
   });
 
@@ -71,4 +82,5 @@ $(function() {
   }
   );
 }
+
 );

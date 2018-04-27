@@ -1,8 +1,8 @@
 @import './../mixins/mixins';
 
 .header{
-	position: fixed;
-	width: 100vw;
+	// position: fixed;
+	// width: 100vw;
 	background: #16151a;
 	display: flex;
 	justify-content: space-around;
@@ -21,6 +21,21 @@
 }
 .navigation{
 	display: flex;
+	@include tablets() {
+		position: relative;
+		top: 15px;
+		left: 0;
+		flex-flow: column;
+		background: #16151a;
+		padding-bottom: 5px;
+		text-align: center;
+		transition: 1s;
+		display: none;
+			@include phones() {
+		padding-right: 0px;
+		
+	}
+	}
 }
 .navigation__li{
 	padding-right: 10px;
@@ -28,9 +43,25 @@
 	font-weight: bold;
 	a{
 		color: white;
+		display: block;
+		width: 100%;
+	}
+}
+.header-info{
+	@include tablets() {
+		display: none;
+	}
+}
+.burger{
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	&:hover{
+		color: red;
 	}
 	@include tablets() {
-		padding-right: 0px;
-		display: none;
+		display: block;
 	}
 }

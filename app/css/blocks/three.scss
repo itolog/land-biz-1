@@ -3,7 +3,6 @@
 .three{
   background: #f8c64d;
   text-align: center;
-  height: 100vh;
   @include phones() {
   width: 100%;
   ul{

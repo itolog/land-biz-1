@@ -9,23 +9,36 @@
 }
 .coments-video{
   display: flex;
-  width: 70%;
+  width: 80%;
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 0 auto;
   list-style: none;
+  @include tablets() {
+    width: 90%;
+	}
 }
 .coments-video__items{
-  width: 350px;
-  height: 250px;
+  width: 250px;
+  height: 150px;
   pad: 5px;
   margin-bottom: 50px;
+  // margin-right: 70px;
   border: 5px solid white;
   background: rgba(255,255,255,.75);
   -webkit-box-shadow: 0 0 23px 0 rgba(55, 55, 55, 1);
   box-shadow: 0 0 23px 0 rgba(55, 55, 55, 1);
-  @include desktop() {
-    width: 250px;
-    height: 150px;
+  @include tablets() {
+    margin-right: 0px;
+    width: 150px;
+    height: 100px;
 	}
+  @include phones() {
+    margin-right: 0px;
+	}
+}
+.coments__title{
+  font-size: 30px;
+  font-weight: bold;
+  // text-transform: uppercase;
 }
