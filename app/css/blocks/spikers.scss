@@ -1,0 +1,38 @@
+@import './../mixins/mixins';
+.spikers{
+  color: #27282b;
+}
+.spiker{
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 400px;
+}
+.spiker-hero{
+  flex: 1;
+}
+.spiker-hero__title{
+  font-size: 30px;
+  text-align: center;
+}
+.spiker-hero__name{
+  color: #f8c64d;
+}
+.hero__img{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.hero__ava{
+  text-align: center;
+}
+.spiker-regal__li{
+  margin-bottom: 5px;
+}
+.spikers__description{
+  margin: 50px;
+  color: #27282b;
+  font-weight: bold;
+  @include tablets() {
+    margin: 10px;
+	}
+}

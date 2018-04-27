@@ -9,10 +9,6 @@
   "keywords": [
     "web"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/itolog/studio.git"
-  },
   "author": "Serhii Romanichencko",
   "license": "ISC",
   "dependencies": {

@@ -1,0 +1,44 @@
+@import './../mixins/mixins';
+
+.join{
+  background: #f8c64d;
+  padding-bottom: 50px;
+  font-size: 18px;
+  color: #27282b;
+}
+.join__title{
+  padding-top: 30px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+.join-content{
+  display: flex;
+  flex-flow: row wrap;
+  @include tablets() {
+		flex-flow: column;
+	}
+}
+.join-content__timer, .join-content__form{
+  flex: 1;
+}
+.join-content__timer-top, .join-content__timer-bottom{
+  background: #ffffff;
+  padding: 15px;
+}
+.join-content__time{
+  background: white;
+  padding: 10px 0px 10px 0px;
+  height: 100px;
+  width: 330px;
+  margin: 20px auto;
+  @include phones() {
+    width: 220px;
+    height: 70px;
+	}
+}
+.join-content__timer-text{
+  font-weight: bold;
+  text-align: center;
+}

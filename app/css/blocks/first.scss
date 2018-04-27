@@ -1,25 +1,46 @@
+@import './../mixins/mixins';
+
 .first{
 	display: flex;
 	flex-flow: column;
 	max-width: 100%;
-	min-height: 700px;
+	height: 100vh;
 	background: url('../img/fon1.png') no-repeat 100% 100%;
 	color: #ffffff;
-	padding: 50px 0px 50px 50px;
+	background-size: cover;
+    background-position: 100% 100%;
+	padding: 120px 0px 50px 50px;
+	font-size: 18px;
+	@include phones() {
+		padding: 50px 5px 20px 5px;
+	}
 }
 .navigation__li{
 	list-style: none;
 }
+.title{
+	font-size: 38px;
+	font-weight: bold;
+}
 .subtitle{
 	display: flex;
 	flex-flow: column;
+	// background: #f8c64d;
+	font-weight: bold;
 }
 .to-do{
 	width: 350px;
 	text-align: center;
+	font-weight: bold;	
+	text-transform: uppercase;
+	p{
+		font-weight: bold;
+	}
+	@include tablets() {
+		width: 200px;
+	}
 }
 .to-do__link{
-	font-size: 18px;
 	padding: 10px;
 	background: #8a0e0c;
 	color: white;

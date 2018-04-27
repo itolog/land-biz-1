@@ -1,0 +1,31 @@
+@import './../mixins/mixins';
+.coments{
+  font-size: 30px;
+  color: #27282b;
+  text-align: center;
+  @include phones() {
+    font-size: 22px;
+	}
+}
+.coments-video{
+  display: flex;
+  width: 70%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  list-style: none;
+}
+.coments-video__items{
+  width: 350px;
+  height: 250px;
+  pad: 5px;
+  margin-bottom: 50px;
+  border: 5px solid white;
+  background: rgba(255,255,255,.75);
+  -webkit-box-shadow: 0 0 23px 0 rgba(55, 55, 55, 1);
+  box-shadow: 0 0 23px 0 rgba(55, 55, 55, 1);
+  @include desktop() {
+    width: 250px;
+    height: 150px;
+	}
+}

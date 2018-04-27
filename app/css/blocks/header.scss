@@ -1,17 +1,36 @@
+@import './../mixins/mixins';
+
 .header{
+	position: fixed;
+	width: 100vw;
 	background: #16151a;
 	display: flex;
 	justify-content: space-around;
 	flex-flow: row wrap; 
-	padding: 20px 20px;
+	padding: 10px 5px;
+	@include tablets() {
+		flex-flow: column wrap; 
+	}
+}
+.logo{
+	width: 40px;
+	height: 40px;
+	background-image: url("./../../img/bat.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 .navigation{
 	display: flex;
-	// color: white;
 }
 .navigation__li{
 	padding-right: 10px;
+	padding-top: 2%;
+	font-weight: bold;
 	a{
 		color: white;
+	}
+	@include tablets() {
+		padding-right: 0px;
+		display: none;
 	}
 }

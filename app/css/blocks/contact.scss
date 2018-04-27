@@ -1,0 +1,14 @@
+.contact{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 24px;
+  }
+}
+.contact__content{
+  background:#f8c64d;
+}

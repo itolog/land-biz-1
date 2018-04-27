@@ -1,0 +1,55 @@
+@import './../mixins/mixins';
+
+.develop{
+  background:  #f8c64d;
+  color: #27282b;
+  font-size: 18px;
+  strong{
+    text-transform: uppercase;
+  }
+}
+.develop__title{
+  color: #ffffff;
+  font-size: 30x;
+  padding-top: 30px;
+  text-align: center;
+}
+.develop-ul__img{
+  width: 170px;
+  height: 100%;
+  padding: 10px;
+  @include tablets() {
+    width: 70px;
+	}
+}
+.develop-ul__img-icon{
+  width: 100%;
+  height: auto;
+}
+.develop-ul{
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  padding-bottom: 50px;
+  @include tablets() {
+   padding: 2px;
+	}
+}
+.develop-ul__li, .develop-ul__li_right{
+  flex: 1;
+}
+.develop-ul__li{
+  display: flex;
+  flex-flow: row;
+  width: 500px;
+  @include tablets() {
+    width: 100%;
+    flex-flow: column-reverse;
+	}
+}
+.develop-ul__li_right{
+  display: flex;
+  flex-flow: row-reverse;
+  align-self: flex-end;
+  text-align: right;
+}

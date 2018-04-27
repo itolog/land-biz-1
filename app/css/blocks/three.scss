@@ -1,9 +1,16 @@
 @import './../mixins/mixins';
 
 .three{
-  height: 100vh;
   background: #f8c64d;
   text-align: center;
+  height: 100vh;
+  @include phones() {
+  width: 100%;
+  ul{
+    margin: 0;
+    padding: 2px;
+  }
+	}
 }
 .three__title{
   margin-bottom: 25px;
@@ -11,6 +18,7 @@
     font-size: 30px;
     padding-top: 20px;
     margin-bottom: 0px;
+    text-transform: uppercase;
   }
   h3{
     font-size: 24px;
@@ -29,8 +37,10 @@
 .three__li{
   display: flex;
   margin-bottom: 10px;
-  // padding: 10x 40px;
   text-align: left;
+  span{
+    font-weight: bold;
+  }
   @include tablets() {
     flex-flow: column;
 	}
@@ -50,6 +60,7 @@
 .three__text-bottom{
   font-size: 24px;
   color: black;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: bold;
+  padding-bottom: 50px;
 }
