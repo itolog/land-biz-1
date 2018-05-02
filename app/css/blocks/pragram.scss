@@ -4,7 +4,6 @@
   display: flex;
   color: #27282b;
   text-align: center;
-  height: auto;
 }
 .pragram-ul{
   display: flex;
@@ -29,13 +28,15 @@
   
   @include tablets() {
     flex-flow: column;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 	}
 }
 .pragram-bloks__left, .pragram-bloks__right{
   flex: 1;
   width: 100%;
-  margin-bottom: 20px;
+  @include tablets() {
+    margin-bottom: 60px;
+	}
 }
 .pragram-bloks__left{
   margin-right: 40px;

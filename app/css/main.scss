@@ -17,13 +17,7 @@
 html{
   font-size: 20px;
   scroll-behavior: smooth;
-  // @include tablets() {
-	// 	font-size: 13px;
-  // }
-  // @include phones() {
-  //   font-size: 10px;
-  //   vertical-align: unset;
-	// }
+ overflow-x: hidden;
 }
 body{
   font-family: 'Exo 2', sans-serif;
@@ -64,9 +58,3 @@ a{
   width: 100%;
   height: auto;
 }
-// section{
-//   height: 100vh;
-//   @include phones() {
-// 		height: auto;
-// 	}
-// }

@@ -1,22 +1,6 @@
 $(function() {
 		
   $(document).ready(function() {
-    var clock;
-
-    clock = $('.clock').FlipClock({
-          clockFace: 'DailyCounter',
-          autoStart: false,
-          language: 'ru',
-          minimumDigits: 6,
-          callbacks: {
-            stop: function() {
-              $('.message').html('The clock has stopped!')
-            }
-          }
-      });
-      clock.setTime(220880);
-      clock.setCountdown(true);
-      clock.start();
 
 
       function menuToggle(){

@@ -7,7 +7,7 @@ const gcmq = require('gulp-group-css-media-queries');
 
 gulp.task('sass', function () {
   return gulp.src('./app/css/main.scss')
-    .pipe(gp.sourcemaps.init())
+    // .pipe(gp.sourcemaps.init())
     .pipe(gp.sassGlob())
     .pipe(gp.sass())
      .on('error', gp.notify.onError({
@@ -28,7 +28,7 @@ gulp.task('sass', function () {
             rootSize  :    16
         }))
     .pipe(gp.csso())
-    .pipe(gp.sourcemaps.write())
+    // .pipe(gp.sourcemaps.write())
     .pipe(gulp.dest('./app/build/css'));
 });
 }

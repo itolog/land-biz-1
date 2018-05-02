@@ -4,13 +4,15 @@
 	display: flex;
 	flex-flow: column;
 	max-width: 100%;
-	height: 100vh;
-	background: url('../img/fon1.png') no-repeat 100% 100%;
+	min-height: 100vh;
+	background: url('../img/fon1.png') no-repeat;
 	color: #ffffff;
 	background-size: cover;
   background-position: 100% 100%;
-	padding: 70px 0px 50px 50px;
+	// padding: 70px 0px 50px 50px;
 	font-size: 18px;
+	justify-content: center;
+
 	@include desktop() {
 		background-position: 40% 100%;
 	}
@@ -20,18 +22,41 @@
 		background-position: 50% 50%;
 	}
 }
+.centr{
+	padding-left: 1%;
+	@include xl() {
+		min-width: 1200px;
+		margin: 0 auto;
+		padding-left: 5%;
+	}
+}
+.paragraph{
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+}
 .navigation__li{
 	list-style: none;
 }
 .title{
-	font-size: 38px;
+	font-size: 2.5rem;
 	font-weight: bold;
+	margin-bottom: 3.7rem;
+	@include tablets() {
+		margin-bottom: 30px;
+		
+	font-size: 40px;
+	}
 }
 .subtitle{
 	display: flex;
 	flex-flow: column;
-	// background: #f8c64d;
+	margin-bottom: 1.7rem;
 	font-weight: bold;
+	font-size: 1.6rem;
+	@include tablets() {
+		margin-bottom: 30px;
+		font-size: 1.8rem;
+	}
 }
 .to-do{
 	width: 350px;
@@ -42,11 +67,16 @@
 		font-weight: bold;
 	}
 	@include tablets() {
-		width: 200px;
+		width: 15.625rem;
 	}
 }
 .to-do__link{
-	padding: 10px;
+	padding: 20px 5px 20px 5px;
 	background: #8a0e0c;
 	color: white;
+	font-size: 20px;
+	@include tablets() {
+		font-size: 16px;
+		padding: 15px 4px 15px 4px;
+	}
 }

@@ -32,12 +32,12 @@
 .join-content__time{
   background: white;
   padding: 10px 0px 10px 0px;
-  height: 100px;
+  height: 3.2rem;
   width: 330px;
   margin: 20px auto;
   @include phones() {
     width: 220px;
-    height: 70px;
+    // height: 70px;
 	}
 }
 .join-content__timer-text{
